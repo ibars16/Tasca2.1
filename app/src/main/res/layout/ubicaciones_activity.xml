@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/concertMiami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miami"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+    <Button
+        android:id="@+id/concertDlas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dalas"
+        app:layout_constraintTop_toBottomOf="@+id/concertMiami"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+    <Button
+        android:id="@+id/concertHouston"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Houston"
+        app:layout_constraintTop_toBottomOf="@+id/concertDlas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+    <Button
+        android:id="@+id/concertOrlando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orlando"
+        app:layout_constraintTop_toBottomOf="@+id/concertHouston"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+    <Button
+        android:id="@+id/concertYork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New York"
+        app:layout_constraintTop_toBottomOf="@+id/concertOrlando"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

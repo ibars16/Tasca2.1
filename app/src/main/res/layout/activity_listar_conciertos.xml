@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/prefences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/preferences"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+        <ImageView
+            android:onClick="clickEvent"
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/next"
+            android:layout_marginStart="5dp"/>
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back" />
+
+        <ImageView
+            android:id="@+id/restart"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_baseline_refresh_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toEndOf="@+id/next" />
+
+        <ImageView
+            android:id="@+id/resume"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/restart"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="24dp"
+            android:tag="start"
+
+ />
+
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="635dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titulTexas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="TEXAS TRUST CU THEATRE"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/descTexas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/titulTexas"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:text="El proximo sábado Melendi regresa al Coliseum de A Coruña con un nuevo lleno al igual que en sus anteriores visitas a la ciudad. Casi sin descanso después de finalizar su exitosa gira anterior, Melendi se embarca en la gira «Mi Cubo de Rubik» que sirvió de preludio para la publicación de su nuevo disco «10:20:40». Sus guerreros, como así se denominan sus fans, ya hacían cola desde primeras horas a pesar de la desapacible tarde de lluvia y viento, para conseguir las primeras posiciones y poder ver a su ídolo de cerca."
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linktextTexas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/descTexas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:text="Compra de entradas:"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linkTexas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/linktextTexas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/common_google_signin_btn_text_light_disabled"
+                android:text="https://www.axs.com/events/439929/melendi-tickets"
+                />
+
+            <ImageView
+                android:id="@+id/imageTexas"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/concert1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linkTexas"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/titulHouston"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageTexas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="80dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="SMART FINANCIAL CENTER"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/descHouston"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/titulHouston"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:text="Tras un gran inicio de gira en América, con entradas agotadas en Estados Unidos, México, Colombia, Ecuador y Panamá, el cantante recorre este verano las principales ciudades españolas hasta el mes de octubre, momento en el que retomará su gira americana con fechas ya confirmadas en el Auditorio Nacional de México y el Gran Rex de Buenos Aires.
+
+BilbaoAsí comenzó el concierto con los temas » Hijos del mal», «De pequeño fue el coco» y «Existen los Ángeles» y continuó interpretando gran parte de los temas de su último disco «Destino o casualidad», » Desde que estamos juntos» o la que da título a su último disco «Quítate las gafas» hasta acabar el concierto con «Yo me veo contigo», disco con el se mantiene en el top de ventas y acumula millones de reproducciones en todas las plataformas digitales. Un disco que cuanto más se escucha más te atrapa."
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linktextHouston"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/descHouston"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:text="Compra de entradas:"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linkHouston"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/linktextHouston"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/common_google_signin_btn_text_light_disabled"
+                android:text="https://www.ticketmaster.com/event/3A005CE1B77E4A48"
+                />
+
+            <ImageView
+                android:id="@+id/imageHouston"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/concert2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linkHouston"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/titulOrlando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageHouston"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="80dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="HARD ROCK LIVE"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/descOrlando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/titulOrlando"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:text="Melendi lo dio todo en el escenario, un wizink center a reventar tocó sus éxitos más conocidos como un violinista en tu tejado , calle la pantomima  y termino con lágrimas desordenadas.
+Con su gira Likes Y Cicatrices quiso demostrar que sigue siendo el , su público de todas las edades no dejaban de cantar y disfrutar de su música, un melendi que no paraba de moverse y hacer disfrutar a su público como he dicho antes disfrutando de su música que para eso asistieron."
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linktextOrlando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/descOrlando"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:text="Compra de entradas:"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linkOrlando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/linktextOrlando"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/common_google_signin_btn_text_light_disabled"
+                android:text="https://www.ticketmaster.com/event/3A005CE1B77E4A48"
+                />
+
+            <ImageView
+                android:id="@+id/imageOrlando"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/concert3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linkOrlando"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/titulMiami"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageOrlando"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="80dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="DADE ARENA"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/descMiami"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/titulMiami"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:text="Melendi se habrá tomado un descanso en 'La Voz Kids', pero sigue bien vivo su entendimiento con audiencias amplias como la que este sábado ha llenado el Palau Sant Jordi, con 18.000 asistentes según la promotora The Project. Noche de colegueo a lo grande con este vecino de al lado que ha crecido a la vista y tiene a bien compartir su proceso de maduración (43 años lo contemplan), ahora a lomos del álbum 'Likes y cicatrices', con su pulla a la tiranía de las redes sociales."
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linktextMiami"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/descMiami"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:text="Compra de entradas:"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linkMiami"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/linktextMiami"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/common_google_signin_btn_text_light_disabled"
+                android:text="https://www.ticketmaster.com/event/3A005CE1B77E4A48"
+                />
+
+            <ImageView
+                android:id="@+id/imageMiami"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/concert4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linkMiami"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/titulYork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageMiami"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="80dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="RADIO CITY MUSIC HALL"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/descYork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/titulYork"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:text="Melendi anunció el lanzamiento de una nueva producción discográfica que llevará como título: Este nuevo proyecto musical del español saldrá a la venta el próximo 4 de diciembre en formato CD+DVD. El álbum fue grabado en el concierto que ofreció Melendi el pasado 19 de septiembre en la Plaza de Toros de Las Ventas de Madrid como parte de la gira"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linktextYork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/descYork"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:text="Compra de entradas:"
+                />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/linkYork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/linktextYork"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:textColorHint="@color/common_google_signin_btn_text_light_disabled"
+                android:text="https://www.ticketmaster.com/event/3A005CE1B77E4A48"
+                />
+
+            <ImageView
+                android:id="@+id/imageYork"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/concert5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linkYork"
+                android:layout_marginTop="30dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
